@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .estrutura {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 4fr 300px;
@@ -32,6 +36,35 @@ a {
 
 .header {
   grid-area: header;
+  display: grid;
+  background-image: linear-gradient(to right, #8844ee, #807DFB);
+  padding: 30px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.125em;
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.header nav a:hover {
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .sidenav {
