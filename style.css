@@ -21,7 +21,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .estrutura {
@@ -91,12 +93,43 @@ img {
 
 .content {
   grid-area: content;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.row-wide {
+  grid-row: span 2;
+}
+
+.image-align-end {
+  align-self: end;
 }
 
 .anuncios {
   grid-area: anuncios;
+  background-color: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
 
 .footer {
   grid-area: footer;
+  background-image: linear-gradient(to right, #8844ee, #807DFB);
+}
+
+.footer p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
 }
