@@ -101,6 +101,69 @@ img {
   gap: 30px;
 }
 
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, .7);
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titulo {
+  color: #807DFB;
+}
+
+.titulo h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.titulo span {
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+.caracteristicas {
+  display: flex;
+  align-self: flex-start;
+  gap: 30px;
+}
+
+.caracteristicas > div {
+  width: 80px;
+  text-align: center;
+  background-image: linear-gradient(to right, #8844ee, #B07DFB);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  position: relative;
+}
+
+.caracteristicas span {
+  display: block;
+}
+
+.numero {
+  color: #B07DFB;
+  font-size: 3em;
+  line-height: 1;
+  margin: 10px auto;
+}
+
+.rotulo {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  color: #B07DFB;
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
+}
+
 .col-wide {
   grid-column: 1 / -1;
 }
