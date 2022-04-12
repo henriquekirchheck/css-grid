@@ -164,6 +164,39 @@ img {
   top: 2px;
 }
 
+.content .destaque {
+  font-size: 0.875em;
+  color: #807DFB;
+  max-width: 16em;
+}
+
+.citacao, .atributos {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, .15);
+  background-image: linear-gradient(135deg, #8844ee, #B07DFB);
+  align-self: start;
+}
+
+.citacao p {
+  font-size: 1.5em;
+  font-style: italic;
+  max-width: 500px;
+  color: white;
+  margin: 0 auto;
+}
+
+.atributos li {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.125em;
+  padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #B07DFB;
+}
+
 .col-wide {
   grid-column: 1 / -1;
 }
